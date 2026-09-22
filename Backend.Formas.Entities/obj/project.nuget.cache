@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "dgSpecHash": "uZ8Phd4qJh0=",
+  "success": true,
+  "projectFilePath": "C:\\Proyectos\\BackEnd-BDP\\UltimaVersion-RamaDev-2026-01-15\\BDPFormasBack\\Backend.Formas.Entities\\Backend.Formas.Entities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.23\\microsoft.entityframeworkcore.8.0.23.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.23\\microsoft.entityframeworkcore.abstractions.8.0.23.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.23\\microsoft.entityframeworkcore.analyzers.8.0.23.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.1\\microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.0\\microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1\\microsoft.extensions.logging.8.0.1.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "Backend.Formas.Entities depende de Microsoft.EntityFrameworkCore (>= 8.0.0), pero no se encontró Microsoft.EntityFrameworkCore 8.0.0. Microsoft.EntityFrameworkCore 8.0.23 se resolvió en su lugar.",
+      "projectPath": "C:\\Proyectos\\BackEnd-BDP\\UltimaVersion-RamaDev-2026-01-15\\BDPFormasBack\\Backend.Formas.Entities\\Backend.Formas.Entities.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Proyectos\\BackEnd-BDP\\UltimaVersion-RamaDev-2026-01-15\\BDPFormasBack\\Backend.Formas.Entities\\Backend.Formas.Entities.csproj",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}
