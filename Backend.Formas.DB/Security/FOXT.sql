@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [FOXT]
+    AUTHORIZATION [dbo];
+

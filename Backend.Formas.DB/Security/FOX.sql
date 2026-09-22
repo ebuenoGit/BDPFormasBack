@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [FOX]
+    AUTHORIZATION [dbo];
+

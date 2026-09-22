@@ -1,0 +1,27 @@
+﻿CREATE TABLE [FOXT].[FORM21PRODUCTIONDETAIL]
+(
+	[form21proddetailid]		UNIQUEIDENTIFIER NOT NULL CONSTRAINT DK_FORM21PRODUCTIONDETAIL_form21proddetailid DEFAULT NEWID(),
+	[oilwell]                   VARCHAR(260) NULL,
+	[zone]                      VARCHAR(260) NULL,
+	[danecode]                  NUMERIC(13) NULL,
+	[productionmethod]          VARCHAR(260) NULL,
+	[monthdays]                 NUMERIC(20,4) NULL,
+	[accumulatedays]            NUMERIC(20,4) NULL,
+	[dailyoilproduction]        NUMERIC(20,4) NULL,
+	[monthlyoilproduction]      NUMERIC(20,4) NULL,
+	[accumulateoilproduction]   NUMERIC(20,4) NULL,
+	[dailygasproduction]        NUMERIC(20,4) NULL,
+	[montlhygasproduction]      NUMERIC(20,4) NULL,
+	[accumulategasproduction]   NUMERIC(20,4) NULL,
+	[dailywaterproduction]      NUMERIC(20,4) NULL,
+	[monthlywaterproduction]    NUMERIC(20,4) NULL,
+	[accumulatewaterproduction] NUMERIC(20,4) NULL,
+	[oilwellfinalstate]         VARCHAR(260) NULL,
+	[pressure]                  NUMERIC(12,2) NULL,
+	[formid]                    UNIQUEIDENTIFIER NULL,
+	[pden_id]                   VARCHAR(260),
+	[row_created_by]          varchar(60) NULL, 
+    [row_created_date]        datetime NULL, 
+	[row_changed_by]          varchar(60) NULL, 
+	[row_changed_date]        datetime NULL
+)

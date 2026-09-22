@@ -1,0 +1,22 @@
+﻿CREATE TABLE [FOXT].[FORM15DETAIL]
+(
+  [form15detailid]          UNIQUEIDENTIFIER NOT NULL CONSTRAINT DK_FORM15DETAIL_formdetailid DEFAULT NEWID() CONSTRAINT PK_FORM15DETAIL PRIMARY KEY,
+  [formid]                  UNIQUEIDENTIFIER not null,
+  [oilwell]                 varchar(50),
+  [formation]               varchar(60),
+  [productionmethod]        varchar(5),
+  [pressure]                numeric(7,2),
+  [cycle]                   numeric(5),
+  [vidays]                  numeric(14,4),
+  [ivaccumulateddays]       numeric(14,4),
+  [ivpoundsmonth]           numeric(20,4),
+  [ivpoundsaccumulateddays] numeric(20,4),
+  [ivbtumonth]              numeric(20,4),
+  [ivbtuaccumulateddays]    numeric(20,4),
+  [quality]                 numeric(14,4),
+  [monthlyoil]              numeric(20,4),
+  [accumulatedoil]          numeric(20,4),
+  [monthlywater]            numeric(20,4),
+  [accumulatedwater]        numeric(20,4),
+  CONSTRAINT [FORM15DETAIL_FORM15_FK1] FOREIGN KEY ([formid]) REFERENCES [FOXT].[FORM15] ([form15id]) ON DELETE CASCADE,
+)

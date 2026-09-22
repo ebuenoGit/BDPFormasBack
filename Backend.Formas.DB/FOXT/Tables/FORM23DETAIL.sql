@@ -1,0 +1,33 @@
+﻿CREATE TABLE [FOXT].[FORM23DETAIL]
+(
+  [form23detailid]        UNIQUEIDENTIFIER NOT NULL CONSTRAINT DK_FORM23_form23detailid DEFAULT NEWID(),    
+  [formid]                      UNIQUEIDENTIFIER null,
+  [widays]                      numeric(20,4),
+  [wiaccumulateddays]           numeric(20,4),
+  [pressure]                    numeric(12,2),
+  [widailywater]                numeric(20,4),
+  [wimonthlywater]              numeric(20,4),
+  [wiaccumulatedwater]          numeric(20,4),
+  [poolname]                    VARCHAR(260),
+  [pden_id]                     VARCHAR(260),
+  [injectionoilwellfinalstate]  numeric(38),
+  [monthdays]                   numeric(20,4),
+  [accumulatedays]              numeric(20,4),
+  [dailyoilproduction]          numeric(20,4),
+  [monthlyoilproduction]        numeric(20,4),
+  [accumulateoilproduction]     numeric(20,4),
+  [dailywaterproduction]        numeric(20,4),
+  [monthlywaterproduction]      numeric(20,4),
+  [accumulatewaterproduction]   numeric(20,4),
+  [dailygasproduction]          numeric(20,4),
+  [monthlygasproduction]        numeric(20,4),
+  [accumulategasproduction]     numeric(20,4),
+  [productionoilwellfinalstate] VARCHAR(260),
+  [productionmethodproduct]     VARCHAR(260),
+  [pressure_prod]               VARCHAR(260),
+  [row_created_by]          varchar(60) NULL, 
+  [row_created_date]        datetime NULL, 
+  [row_changed_by]          varchar(60) NULL, 
+  [row_changed_date]        datetime NULL
+  
+)

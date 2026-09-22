@@ -1,0 +1,21 @@
+﻿CREATE TABLE [FOXT].[APROBACIONPRECARGA] (
+    [Id]                 NUMERIC (38) IDENTITY (1, 1) NOT NULL,
+    [ID_Forma]           UNIQUEIDENTIFIER  NULL,
+    [FechaForma]         DATETIME     NULL,
+    [Usuario]            VARCHAR(50)  NULL,
+    [FechaApertura]      DATETIME     NULL,
+    [FechaCierre]        DATETIME     NULL,
+    [FechaCreacion]      DATETIME     NULL,
+    [FechaActualizacion] DATETIME     NULL,
+    [UsuarioAprobador]   VARCHAR(50)  NULL,
+    [FormaName] VARCHAR(50) NULL, 
+    [UrlForma] VARCHAR(150) NULL, 
+    [Operador] VARCHAR(50) NULL, 
+    [Contrato] VARCHAR(50) NULL, 
+    [Campo] VARCHAR(50) NULL,
+    [UsuarioNombre]   VARCHAR(50) NULL,
+    [UsuarioNombreAprobador]  VARCHAR(150) NULL, 
+    [Activo] NUMERIC(38) NULL, 
+    [Motivo] NTEXT NULL,
+);
+

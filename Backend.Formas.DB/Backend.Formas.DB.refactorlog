@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="cec1a09c-c205-4632-8e15-7e4e14a6d33e" ChangeDateTime="07/31/2020 18:18:27">
+    <Property Name="ElementName" Value="[dbo].[Formar20Archivo].[User_Create]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Formar20Archivo]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="User_Created" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0fecd86c-663b-43fc-af5e-bdaf4d81c180" ChangeDateTime="07/31/2020 18:18:37">
+    <Property Name="ElementName" Value="[dbo].[Formar20Archivo].[Date_Create]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Formar20Archivo]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Date_Created" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="00e12fea-64b4-4fe8-b106-e26687d80fd6" ChangeDateTime="08/01/2020 12:40:40">
+    <Property Name="ElementName" Value="[FOXT].[APROBACIONPRECARGA].[operador]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[APROBACIONPRECARGA]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Operador" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ac561a9a-7c89-4498-b67f-939033b03679" ChangeDateTime="08/01/2020 12:40:49">
+    <Property Name="ElementName" Value="[FOXT].[APROBACIONPRECARGA].[contrato]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[APROBACIONPRECARGA]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Contrato" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2b93c3ca-6b0f-4999-a4a1-cea39b1ea1df" ChangeDateTime="08/01/2020 12:40:56">
+    <Property Name="ElementName" Value="[FOXT].[APROBACIONPRECARGA].[campo]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[APROBACIONPRECARGA]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Campo" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5a5270eb-0e93-4e00-a7ec-bb51cd4255b4" ChangeDateTime="08/01/2020 12:42:24">
+    <Property Name="ElementName" Value="[FOXT].[APROBACIONPRECARGA].[urlForma]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[APROBACIONPRECARGA]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UrlForma" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b4328e31-4447-4375-98f2-70178956bd84" ChangeDateTime="08/01/2020 12:42:51">
+    <Property Name="ElementName" Value="[FOXT].[APROBACIONCARGA].[urlForma]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[APROBACIONCARGA]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UrlForma" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="206bd511-a91f-49cc-8f9d-893c1506c87d" ChangeDateTime="08/01/2020 12:42:55">
+    <Property Name="ElementName" Value="[FOXT].[APROBACIONCARGA].[operador]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[APROBACIONCARGA]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Operador" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="59100e31-c6d5-48ee-9c3c-9d15cb8402e4" ChangeDateTime="08/01/2020 12:42:59">
+    <Property Name="ElementName" Value="[FOXT].[APROBACIONCARGA].[contrato]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[APROBACIONCARGA]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Contrato" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a7ae568b-be58-4132-bdcf-d99d529032c4" ChangeDateTime="08/01/2020 12:43:04">
+    <Property Name="ElementName" Value="[FOXT].[APROBACIONCARGA].[campo]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[APROBACIONCARGA]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Campo" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="61b279b3-a40d-4834-a017-2124a91d929d" ChangeDateTime="08/07/2020 20:02:47">
+    <Property Name="ElementName" Value="[FOXT].[FORM30].[totalbasicgasproduction]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="operador" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c3c8fd53-ca2f-40d9-b760-5f195b29a6c9" ChangeDateTime="08/07/2020 20:03:04">
+    <Property Name="ElementName" Value="[FOXT].[FORM30].[totalincrementalgasproduction]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="contrato" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6bccb0a2-3a59-4292-be95-f943e2f39a8f" ChangeDateTime="08/07/2020 20:03:26">
+    <Property Name="ElementName" Value="[FOXT].[FORM30].[totalgasproduction]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="date" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3f5aca79-d333-4d6b-a7a9-599b9bdcdedb" ChangeDateTime="08/07/2020 20:03:52">
+    <Property Name="ElementName" Value="[FOXT].[FORM30].[totalwpcpropane]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="uid" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1458155c-37bd-4d1d-b38f-68e7dd8c969b" ChangeDateTime="08/07/2020 20:04:03">
+    <Property Name="ElementName" Value="[FOXT].[FORM30].[totalwpcbutane]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="lastModified" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e94891a3-3f8e-4e8e-bd20-f837ebd4f111" ChangeDateTime="08/07/2020 20:04:24">
+    <Property Name="ElementName" Value="[FOXT].[FORM30].[totalwpcgasoline]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="lastModifiedDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6eeb0d58-720e-41aa-8de6-d2405b98dced" ChangeDateTime="08/07/2020 20:04:35">
+    <Property Name="ElementName" Value="[FOXT].[FORM30].[totalformationprocessedgas]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="35f50835-6574-4164-8e5a-74b38936679c" ChangeDateTime="08/07/2020 20:04:45">
+    <Property Name="ElementName" Value="[FOXT].[FORM30].[totalugcurbangaspipeline]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="size" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3de3e0e2-bd99-452f-a9e5-6583364256fe" ChangeDateTime="08/07/2020 20:04:55">
+    <Property Name="ElementName" Value="[FOXT].[FORM30].[totalugcelectricgeneration]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="type" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8621c251-5834-4c8b-8a6b-fe8ffb97173c" ChangeDateTime="08/07/2020 20:05:08">
+    <Property Name="ElementName" Value="[FOXT].[FORM30].[totalugcothersales]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="percent" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1fb559a3-8457-402d-aaec-06a67b457fd9" ChangeDateTime="08/07/2020 20:05:34">
+    <Property Name="ElementName" Value="[FOXT].[FORM30].[totalugcburned]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="originFileObj_uid" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ae382469-9c42-4169-969f-9fb5ad286de5" ChangeDateTime="08/07/2020 20:06:28">
+    <Property Name="ElementName" Value="[FOXT].[FORM30DETAIL].[formation]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30DETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="campo" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cacc1638-e796-40d2-bc3a-e2fc178a053a" ChangeDateTime="08/07/2020 20:06:37">
+    <Property Name="ElementName" Value="[FOXT].[FORM30DETAIL].[oilfieldid]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30DETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="gasFormacionKPC" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3ae61713-90b0-4e64-bee5-70267c55cd6f" ChangeDateTime="08/07/2020 20:06:42">
+    <Property Name="ElementName" Value="[FOXT].[FORM30DETAIL].[danecode]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30DETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="contenidoPropano" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c4d42982-5f50-4279-9241-2dba0d27e24d" ChangeDateTime="08/07/2020 20:06:46">
+    <Property Name="ElementName" Value="[FOXT].[FORM30DETAIL].[basicgasproduction]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30DETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="contenidoButano" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e695ffea-198b-4c5c-b58c-7b3934572609" ChangeDateTime="08/07/2020 20:06:54">
+    <Property Name="ElementName" Value="[FOXT].[FORM30DETAIL].[totalgasproduction]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30DETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="gasFormacionProcesado" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9edfad65-4bc4-4848-81f1-0fd72ffecb1c" ChangeDateTime="08/07/2020 20:06:59">
+    <Property Name="ElementName" Value="[FOXT].[FORM30DETAIL].[wpcpropane]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30DETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="consumoEnCampo" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="405d74e6-5799-4660-a2f8-30cadfb9e4cb" ChangeDateTime="08/07/2020 20:07:12">
+    <Property Name="ElementName" Value="[FOXT].[FORM30DETAIL].[wpcbutane]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30DETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="generacionElectrica" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="20363dd5-13c5-483f-ba01-683f5d4d305f" ChangeDateTime="08/07/2020 20:07:19">
+    <Property Name="ElementName" Value="[FOXT].[FORM30DETAIL].[wpcgasoline]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30DETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="otros" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="37a35d24-03a4-408f-a0bb-0b7e4f967f74" ChangeDateTime="08/07/2020 20:07:24">
+    <Property Name="ElementName" Value="[FOXT].[FORM30DETAIL].[formationprocessedgas]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30DETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="quemadoAire" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fa52bb68-c785-46ff-973a-b7069b864c77" ChangeDateTime="08/07/2020 20:07:32">
+    <Property Name="ElementName" Value="[FOXT].[FORM30DETAIL].[ugcoconsumed]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30DETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="usadoBombeoNeumatico" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d2968ad5-5a08-4949-aacc-cae235418ec9" ChangeDateTime="08/07/2020 20:07:49">
+    <Property Name="ElementName" Value="[FOXT].[FORM30DETAIL].[ugcurbangaspipeline]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30DETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="inyectadoYacimiento" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e4f44df8-22ee-4620-9497-381ae0c837ac" ChangeDateTime="08/07/2020 20:07:54">
+    <Property Name="ElementName" Value="[FOXT].[FORM30DETAIL].[ugcelectricgeneration]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30DETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="productosObtenidosGasTotalGasProcesadoPlanta" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="70b7cece-2cba-4c72-80ca-8ca26d0680eb" ChangeDateTime="08/07/2020 20:08:01">
+    <Property Name="ElementName" Value="[FOXT].[FORM30DETAIL].[ugcothersales]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30DETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="productosObtenidosGasPropano" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="896a9c7f-a90c-4f55-aa30-8fbda2c204c1" ChangeDateTime="08/07/2020 20:08:09">
+    <Property Name="ElementName" Value="[FOXT].[FORM30DETAIL].[ugcburned]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30DETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="productosObtenidosGasButano" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="911697a0-594b-44ec-9810-22f53433330b" ChangeDateTime="08/07/2020 20:08:17">
+    <Property Name="ElementName" Value="[FOXT].[FORM30DETAIL].[ugcmechanicpumping]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30DETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="productosObtenidosGasGasolina" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c40c5cd4-31b6-4eab-9f1a-7e8ac164dcdd" ChangeDateTime="08/07/2020 20:08:23">
+    <Property Name="ElementName" Value="[FOXT].[FORM30DETAIL].[ugcinyected]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30DETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="productosObtenidosGasTransformadoGasolinaNaturalPropanosButanos" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="364e453c-9903-4fdb-84eb-727e93783438" ChangeDateTime="08/07/2020 23:52:11">
+    <Property Name="ElementName" Value="[FOXT].[FORM30DETAIL].[incrementalgasproduction]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM30DETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="contenidoGasolinaNatural" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="180ca1c9-6367-4247-bb16-630f43b6f249" ChangeDateTime="08/20/2020 21:01:10">
+    <Property Name="ElementName" Value="[dbo].[FORM21].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FORM21]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="form21id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="298696b0-0cfa-4f42-986f-e5706af94084" ChangeDateTime="08/20/2020 21:03:29">
+    <Property Name="ElementName" Value="[dbo].[FORM21INYECTIONDETAIL].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FORM21INYECTIONDETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="form21detailid" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="60344a35-bf3a-4b5b-a783-89f8257887b8" ChangeDateTime="08/20/2020 21:06:36">
+    <Property Name="ElementName" Value="[dbo].[FORM21PRODUCTIONDETAIL].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FORM21PRODUCTIONDETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="form21proddetailid" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1f17b9b2-d343-4dfa-bf00-cfcc97b90c2d" ChangeDateTime="08/20/2020 22:20:32">
+    <Property Name="ElementName" Value="[dbo].[FORM21TOTALVOLUMEDETAIL].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FORM21TOTALVOLUMEDETAIL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Idform21tvdetailid" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5a054748-8a76-4318-b69f-fec9e69c2cc7" ChangeDateTime="10/14/2020 20:55:49">
+    <Property Name="ElementName" Value="[FOXT].[FORM20].[FORMACION_ID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM20]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="formacion_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="35845450-14cb-4dfa-bd90-c4b795b0031b" ChangeDateTime="10/14/2020 20:56:07">
+    <Property Name="ElementName" Value="[FOXT].[FORM20].[FORMACION_SET_ID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[FOXT].[FORM20]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="formacion_set_id" />
+  </Operation>
+</Operations>

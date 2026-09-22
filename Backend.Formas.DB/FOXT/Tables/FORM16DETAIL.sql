@@ -1,0 +1,28 @@
+﻿CREATE TABLE [FOXT].[FORM16DETAIL]
+(
+	[form16detailid]     UNIQUEIDENTIFIER NOT NULL CONSTRAINT DK_FORM16DETAIL_form16detailid DEFAULT NEWID(),
+    [formid]             UNIQUEIDENTIFIER  null,
+    [oilwell]            VARCHAR(260),
+    [productionmethod]   VARCHAR(260),
+    [zone]               VARCHAR(260),
+    [testingdate]        DATE,
+    [oilwellstate]       VARCHAR(260),
+    [thppressure]        NUMERIC(10,4),
+    [chppressure]        NUMERIC(10,4),
+    [hours]              NUMERIC(2),
+    [dailyoilproduction] NUMERIC(20,4),
+    [reductionSize]      NUMERIC(10,4),
+    [wellpumpinglength]  NUMERIC(10,4),
+    [wellpumpdumpsminute] NUMERIC(10,4),
+    [productiontestingoilBLS] NUMERIC(10,4),
+    [productiontestgravityoil] NUMERIC(10,4),
+    [api]                NUMERIC(8,5),
+    [water]              NUMERIC(20,4),
+    [gas]                NUMERIC(20,4),
+    [rga]                NUMERIC(15,6),
+    [pden_id]            VARCHAR(260),
+    [row_created_by]          varchar(60) NULL, 
+    [row_created_date]        datetime NULL, 
+    [row_changed_by]          varchar(60) NULL, 
+    [row_changed_date]        datetime NULL
+)

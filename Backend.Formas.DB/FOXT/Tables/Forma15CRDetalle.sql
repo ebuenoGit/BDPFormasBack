@@ -1,0 +1,26 @@
+﻿CREATE TABLE [FOXT].[Forma15CRDetalle](
+id_detalle uniqueidentifier NOT NULL,
+	form_id uniqueidentifier NOT NULL,
+  valInyecPozo VARCHAR(50), 
+         valInyecFormacionProductora varchar(260), 
+         valInyecMetodoProduccion VARCHAR(50), 
+         valInyecPresionInyeccion DECIMAL(20,2), 
+         valInyecCiclo DECIMAL(20,2), 
+         valInyecDiasMes DECIMAL(20,2), 
+         valInyecDiasAcumulados DECIMAL(20,2), 
+         valInyecLibrasMes DECIMAL(20,2), 
+         valInyecLibrasAcumulados DECIMAL(20,2), 
+         valInyecBTUMes DECIMAL(20,2), 
+         valInyecBTUAcumulados DECIMAL(20,2), 
+         valInyecCalidadVapor VARCHAR(50),
+         produccionPetroleoBlsNetosMensual DECIMAL(20,2), 
+         produccionPetroleoBlsNetosAcumulado DECIMAL(20,2), 
+         produccionAguaBlsMensual DECIMAL(20,2), 
+         produccionAguaBlsAcumulado DECIMAL(20,2), 
+		 [row_created_by]          varchar(60) NULL, 
+         [row_created_date]        datetime NULL, 
+         [row_changed_by]          varchar(60) NULL, 
+         [row_changed_date]        datetime NULL,
+         [pden_id] VARCHAR(50) NULL
+) ON [PRIMARY]
+GO		 
