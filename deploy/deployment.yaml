@@ -1,0 +1,119 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: #{Name}#
+  namespace: #{NameSpace}#
+spec:
+  replicas: #{Replicas}#
+  selector: 
+    matchLabels:
+      name: #{Name}#
+  template:
+    metadata:
+      labels:
+        app: #{Name}#
+        name: #{Name}#
+    spec:
+      containers:
+        - name: #{Name}#
+          image: #{ContainerRegistry}#.azurecr.io/#{acr-repository}#:#{Version}#
+          resources:
+            limits:
+              cpu: #{LimitCpu}#
+              memory: #{LimitMemory}#
+            requests:
+              cpu: #{RequestCpu}#
+              memory: #{RequestMemory}#
+          env:
+          - name: ClientId
+            valueFrom:
+              secretKeyRef:
+                name: #{nameKvSecret}#
+                key: ClientId
+          - name: ClientSecret
+            valueFrom:
+              secretKeyRef:
+                name: #{nameKvSecret}#
+                key: ClientSecret
+          - name: KeyVaultUrl
+            valueFrom:
+              secretKeyRef:
+                name: #{nameKvSecret}#
+                key: KeyVaultUrl
+          readinessProbe:
+           httpGet:
+             path: /swagger/index.html
+             port: 80
+             scheme: HTTP
+           initialDelaySeconds: 3
+           timeoutSeconds: 1
+           periodSeconds: 3
+           successThreshold: 1
+           failureThreshold: 3  
+          ports:
+            - containerPort: 80
+      serviceAccountName: #{ServiceAccount}#
+      imagePullSecrets:
+      - name: #{ImagePullSecret}#
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: #{Name}#
+  namespace: #{NameSpace}#
+spec:
+  clusterIP: 
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    name: #{Name}#
+  type: ClusterIP
+---
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: #{Name}#
+  namespace: #{NameSpace}#
+  annotations:
+    description: Route for Decision Central's http service.
+    haproxy.router.openshift.io/timeout: #{progressDeadlineSeconds}#
+spec:
+  host: #{Name}#.apps.#{NameCluster}#.red.ecopetrol.com.co
+  to:
+    kind: Service
+    name: #{Name}#
+  port:
+    targetPort: 80
+---
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: #{Name}#-https
+  namespace: #{Namespace}#
+  annotations:
+    description: Route for Decision Central's http service.
+    haproxy.router.openshift.io/timeout: #{progressDeadlineSeconds}#
+spec:
+  host: #{Name}#-https.apps.#{NameCluster}#.red.ecopetrol.com.co
+  to:
+    kind: Service
+    name: #{Name}#
+  port:
+    targetPort: 80
+  tls:
+    termination: edge
+  wildcardPolicy: None 
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: #{nameKvSecret}#
+  namespace: #{Namespace}#
+type: Opaque
+data:
+  ClientId: #{ClientId}#
+  ClientSecret: #{ClientSecret}#
+  KeyVaultUrl: #{KeyVaultUrl}#
