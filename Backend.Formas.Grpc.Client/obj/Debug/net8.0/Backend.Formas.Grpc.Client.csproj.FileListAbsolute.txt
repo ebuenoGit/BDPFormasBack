@@ -1,0 +1,15 @@
+C:\Proyectos\BackEnd-BDP\UltimaVersion-RamaDev-2026-01-15\BDPFormasBack\Backend.Formas.Grpc.Client\bin\Debug\net8.0\Backend.Formas.Grpc.Client.deps.json
+C:\Proyectos\BackEnd-BDP\UltimaVersion-RamaDev-2026-01-15\BDPFormasBack\Backend.Formas.Grpc.Client\bin\Debug\net8.0\Backend.Formas.Grpc.Client.dll
+C:\Proyectos\BackEnd-BDP\UltimaVersion-RamaDev-2026-01-15\BDPFormasBack\Backend.Formas.Grpc.Client\bin\Debug\net8.0\Backend.Formas.Grpc.Client.pdb
+C:\Proyectos\BackEnd-BDP\UltimaVersion-RamaDev-2026-01-15\BDPFormasBack\Backend.Formas.Grpc.Client\bin\Debug\net8.0\Backend.Formas.Entities.dll
+C:\Proyectos\BackEnd-BDP\UltimaVersion-RamaDev-2026-01-15\BDPFormasBack\Backend.Formas.Grpc.Client\bin\Debug\net8.0\Backend.Formas.Entities.pdb
+C:\Proyectos\BackEnd-BDP\UltimaVersion-RamaDev-2026-01-15\BDPFormasBack\Backend.Formas.Grpc.Client\obj\Debug\net8.0\Backend.Formas.Grpc.Client.csproj.AssemblyReference.cache
+C:\Proyectos\BackEnd-BDP\UltimaVersion-RamaDev-2026-01-15\BDPFormasBack\Backend.Formas.Grpc.Client\obj\Debug\net8.0\Backend.Formas.Grpc.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos\BackEnd-BDP\UltimaVersion-RamaDev-2026-01-15\BDPFormasBack\Backend.Formas.Grpc.Client\obj\Debug\net8.0\Backend.Formas.Grpc.Client.AssemblyInfoInputs.cache
+C:\Proyectos\BackEnd-BDP\UltimaVersion-RamaDev-2026-01-15\BDPFormasBack\Backend.Formas.Grpc.Client\obj\Debug\net8.0\Backend.Formas.Grpc.Client.AssemblyInfo.cs
+C:\Proyectos\BackEnd-BDP\UltimaVersion-RamaDev-2026-01-15\BDPFormasBack\Backend.Formas.Grpc.Client\obj\Debug\net8.0\Backend.Formas.Grpc.Client.csproj.CoreCompileInputs.cache
+C:\Proyectos\BackEnd-BDP\UltimaVersion-RamaDev-2026-01-15\BDPFormasBack\Backend.Formas.Grpc.Client\obj\Debug\net8.0\Backend..27721925.Up2Date
+C:\Proyectos\BackEnd-BDP\UltimaVersion-RamaDev-2026-01-15\BDPFormasBack\Backend.Formas.Grpc.Client\obj\Debug\net8.0\Backend.Formas.Grpc.Client.dll
+C:\Proyectos\BackEnd-BDP\UltimaVersion-RamaDev-2026-01-15\BDPFormasBack\Backend.Formas.Grpc.Client\obj\Debug\net8.0\refint\Backend.Formas.Grpc.Client.dll
+C:\Proyectos\BackEnd-BDP\UltimaVersion-RamaDev-2026-01-15\BDPFormasBack\Backend.Formas.Grpc.Client\obj\Debug\net8.0\Backend.Formas.Grpc.Client.pdb
+C:\Proyectos\BackEnd-BDP\UltimaVersion-RamaDev-2026-01-15\BDPFormasBack\Backend.Formas.Grpc.Client\obj\Debug\net8.0\ref\Backend.Formas.Grpc.Client.dll

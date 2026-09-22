@@ -1,0 +1,70 @@
+﻿// Copyright 2015 gRPC authors.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+package Backend.Administracion;
+
+// The Grpc Administration Server
+service AdmGrpc {
+	// Get Approved User
+	rpc UsuarioAprobador (RequestAprobaciones) returns (ResponseBase) {}
+
+	// Notificación a Usuarios por Rol y Contrato
+	rpc NotificarRoles (RequestNotificacion) returns (ResponseBase) {}
+
+	// Obtener información Usuario
+	rpc ObtenerUsuario (RequesUsuario) returns (ResponseBase) {}
+}
+
+//*************
+//  Request Aprobaciones Consulta Permisos Formas
+//*************
+// The request message from Aprobaciones
+message RequestAprobaciones {
+	string nombreForma = 1;
+}
+
+//*************
+//  Request Aprobaciones Consulta Permisos Formas
+//*************
+// The request message from Aprobaciones
+message RequestNotificacion {
+	string contrato = 1;
+	string asunto = 2;
+	string mensaje = 3;
+	bool soloAdministradores = 4;
+}
+
+//*************
+//  RESPONSE Base
+//*************
+message ResponseBase {
+	google.protobuf.StringValue message = 1;
+	int32 count = 2;
+	google.protobuf.Timestamp responseTime = 3;
+	google.protobuf.StringValue data = 4;
+	int32 code = 5;
+}
+
+//*************
+//  Request Obtener Usuario Consulta Información
+//*************
+// The request message from ObtenerUsuario
+message RequesUsuario {
+	string codigo = 1;
+}

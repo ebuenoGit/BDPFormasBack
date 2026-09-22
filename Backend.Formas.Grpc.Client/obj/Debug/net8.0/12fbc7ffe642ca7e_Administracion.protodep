@@ -1,0 +1,4 @@
+obj\Debug\net8.0\protos/Administracion.cs \
+obj\Debug\net8.0\protos/AdministracionGrpc.cs: C:/Users/Administrador/.nuget/packages/grpc.tools/2.64.0/build/native/include/google/protobuf/timestamp.proto\
+ C:/Users/Administrador/.nuget/packages/grpc.tools/2.64.0/build/native/include/google/protobuf/wrappers.proto\
+ protos/Administracion.proto

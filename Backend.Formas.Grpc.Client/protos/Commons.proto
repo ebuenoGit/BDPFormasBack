@@ -1,0 +1,71 @@
+﻿// Copyright 2015 gRPC authors.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+package Backend.Commons;
+
+// The Grpc Commons Server
+service CommonGrpc {
+	// Integrador BDP
+	rpc IntegradorBDP (RequestBase) returns (ResponseBase) {}
+
+	// AVM to BDP
+	rpc AVMtoBDP (RequestBase) returns (ResponseBase) {}
+	
+	// UploadFile
+	rpc UploadFile (FileSystemUploadFileOptions) returns (ResponseBase) {}
+
+	// MoveItem
+	rpc MoveItem (FileSystemMoveItemOptions) returns (ResponseBase) {}
+}
+
+//*************
+//  Request Base
+//*************
+// The request message from Integrador
+message RequestBase {
+	string sJson = 1;
+}
+
+//*************
+//  Response Base
+//*************
+message ResponseBase {
+	google.protobuf.StringValue message = 1;
+	int32 count = 2;
+	google.protobuf.Timestamp responseTime = 3;
+	google.protobuf.StringValue data = 4;
+	int32 code = 5;
+}
+
+message FileSystemItemInfo {
+	string Path = 1;	
+}
+
+message FileSystemUploadFileOptions {
+	string FileName = 1;
+	google.protobuf.StringValue FileData = 2;
+	FileSystemItemInfo DestinationDirectory = 3;
+	google.protobuf.StringValue Container = 4;
+}
+
+message FileSystemMoveItemOptions {
+	FileSystemItemInfo Item = 1;
+	FileSystemItemInfo DestinationDirectory = 2;
+	google.protobuf.StringValue Container = 3;
+}

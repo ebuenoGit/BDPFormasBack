@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ProjectGuid>{EC8CA5FA-F13E-455A-BDB6-8232333BB4A1}</ProjectGuid>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="protos\Commons.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="protos\Administracion.proto" GrpcServices="Client" />
+    <Protobuf Include="protos\Commons.proto" GrpcServices="Client" />
+    <Protobuf Include="protos\Ppdm.proto" GrpcServices="Client" />
+
+    <PackageReference Include="Google.Protobuf" Version="3.27.1" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.63.0" />
+    <PackageReference Include="Grpc.Tools" PrivateAssets="All" Version="2.64.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Backend.Formas.Entities\Backend.Formas.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

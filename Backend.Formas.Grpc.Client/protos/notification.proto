@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option csharp_namespace = "Backend.Componentes.Grpc";
+
+package notification;
+
+service Notification {
+  rpc SendEmail (SendEmailRequest) returns (SendEmailReply);
+}
+
+message SendEmailRequest {
+  string subject = 1;
+  repeated string to = 2;
+  string body = 3;
+  string template = 4;
+  map<string, string> dictionary = 5;
+  repeated string comm = 6;
+  string origin = 7;
+}
+
+message SendEmailReply {
+  bool success = 1;
+  bool error = 2;
+}
