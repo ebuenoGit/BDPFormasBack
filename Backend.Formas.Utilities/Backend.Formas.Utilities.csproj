@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ProjectGuid>{486A4090-E651-4E58-ADAD-7F51A5BC710A}</ProjectGuid>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Google.Protobuf" Version="3.32.0" />
+		<PackageReference Include="Grpc" Version="2.46.6" />
+		<PackageReference Include="Grpc.Net.ClientFactory" Version="2.71.0" />
+		<PackageReference Include="Grpc.Tools" PrivateAssets="All" Version="2.64.0" />
+		<PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.23.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="8.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Backend.Formas.Entities\Backend.Formas.Entities.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Protobuf Include="..\Backend.Formas.Grpc.Client\protos\notification.proto" GrpcServices="Client">
+		  <Link>Protos\notification.proto</Link>
+		</Protobuf>
+	</ItemGroup>
+
+</Project>

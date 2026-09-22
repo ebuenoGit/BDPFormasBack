@@ -1,0 +1,2 @@
+obj\Debug\net8.0/Notification.cs \
+obj\Debug\net8.0/NotificationGrpc.cs: ../Backend.Formas.Grpc.Client/protos/notification.proto
