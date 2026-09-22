@@ -1,0 +1,878 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Backend.Formas.API</name>
+    </assembly>
+    <members>
+        <member name="T:Backend.Formas.API.Controllers.AprobacionController">
+            <summary>
+            Aprobacion
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="F:Backend.Formas.API.Controllers.AprobacionController.business">
+            <summary>
+            The business
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.AprobacionController.#ctor(Backend.Formas.Entities.Interface.Business.IAdministracionFormasBusiness,Backend.Administracion.AdmGrpc.AdmGrpcClient,Backend.Formas.Entities.Interface.Business.IOficializarFormas)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Backend.Formas.API.Controllers.AprobacionController"/> class.
+            </summary>
+            <param name="aprobacion">The aprobacion.</param>
+            <param name="integradorImplementClient">The integrador implement client.</param>
+            <param name="oficializar">The aprobacion.</param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.AprobacionController.GestListAprobacion">
+            <summary>
+            Aprobacion. Lista formas aprobación.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.AprobacionController.GestListPrecarga">
+            <summary>
+            Aprobacion. Lista Formas Solicitud Precarga.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.AprobacionController.SavePrecarga(System.Collections.Generic.List{Backend.Formas.Entities.DAO.Aprobacionprecarga})">
+            <summary>
+            Precarga. Registrar solicitud de precarga
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.AprobacionController.updatePrecarga(Backend.Formas.Entities.DAO.Aprobacionprecarga)">
+            <summary>
+            Precarga. Registrar solicitud de precarga
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.AprobacionController.GenerarAprobacion(System.Collections.Generic.List{Backend.Formas.Entities.DAO.Aprobacioncarga})">
+            <summary>
+            Aprobacion. Lista Formas Solicitud Precarga.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.AprobacionController.OficializarFormas(Backend.Formas.Entities.Models.OficializarModel)">
+            <summary>
+            
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.AprobacionController.ConsultaOficializarFormas(System.DateTime,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="fechaOperativa"></param>
+            <param name="idForma"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.AprobacionController.Test">
+            <summary>
+            Tests this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.Base.BaseController">
+            <summary>
+                Base Controller
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="P:Backend.Formas.API.Controllers.Base.BaseController.GetEmail">
+            <summary>
+                Gets the get email.
+            </summary>
+            <value>
+                The get email.
+            </value>
+        </member>
+        <member name="P:Backend.Formas.API.Controllers.Base.BaseController.GetUserId">
+            <summary>
+                Gets the get user identifier.
+            </summary>
+            <value>
+                The get user identifier.
+            </value>
+        </member>
+        <member name="P:Backend.Formas.API.Controllers.Base.BaseController.GetNames">
+            <summary>
+                Gets the get names.
+            </summary>
+            <value>
+                The get names.
+            </value>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Base.BaseController.GetRolesIds">
+            <summary>
+                Gets the get role identifier.
+            </summary>
+            <value>
+                The get role identifier.
+            </value>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.Base.BaseControllerUtilities">
+            <summary>
+            BaseUtilities
+            </summary>
+        </member>
+        <member name="P:Backend.Formas.API.Controllers.Base.BaseControllerUtilities.SubscriptionKey">
+            <summary>
+            Subscription Key.
+            </summary>
+        </member>
+        <member name="P:Backend.Formas.API.Controllers.Base.BaseControllerUtilities.APIUrl">
+            <summary>
+            API Url.
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Base.BaseControllerUtilities.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            TokenValidationFilterAttribute
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Base.BaseControllerUtilities.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
+            <summary>
+            OnActionExecuting
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.ConsultaFormasController">
+            <summary>
+            ConsultaFormasController
+            </summary>
+            <seealso cref="T:Backend.Formas.API.Controllers.Base.BaseController" />
+        </member>
+        <member name="F:Backend.Formas.API.Controllers.ConsultaFormasController.Business">
+            <summary>
+            The business
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.ConsultaFormasController.#ctor(Backend.Formas.Entities.Interface.Business.IConsultaFormasBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Backend.Formas.API.Controllers.ConsultaFormasController"/> class.
+            </summary>
+            <param name="business">The business.</param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.ConsultaFormasController.GetConsultaFormas(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Gets the consulta formas versión 23032022.
+            </summary>
+            <param name="anio">selected year o current year.</param>
+            <param name="forma">number forma o identification.</param>
+            <param name="mes">selected month.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.ConsultaFormasController.GetFormasOperador(System.Int32,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="anio"></param>
+            <param name="forma"></param>
+            <param name="mes"></param>
+            <param name="operador"></param>
+            <param name="campo"></param>
+            <param name="contrato"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.Forma15Controller">
+            <summary>
+            Forma15
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="F:Backend.Formas.API.Controllers.Forma15Controller._business">
+            <summary>
+            The business
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma15Controller.#ctor(Backend.Formas.Entities.Interface.Business.IForma15Business)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Backend.Formas.API.Controllers.Forma15Controller"/> class.
+            </summary>
+            <param name="business">The business.</param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma15Controller.UploadFile(System.DateTime,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Forma15. Uploads the file.
+            </summary>
+            <param name="_date">The date.</param>
+            <param name="file">The file.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma15Controller.CreateForm(System.DateTime,Backend.Formas.Entities.DTO.Dominios.ResponseForma15)">
+            <summary>
+            Creates the form.
+            </summary>
+            <param name="date">The date.</param>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.Forma15CRController">
+            <summary>
+            Controllers 15 CR
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma15CRController.#ctor(Backend.Formas.Entities.Interface.Business.IFormas15CRBusiness)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="_formas15CR"></param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma15CRController.ValidateForm15CR(System.DateTime,System.String,System.String)">
+            <summary>
+            Validador forma 15CR
+            </summary>
+            <param name="date"></param>
+            <param name="forma"></param>
+            <param name="fileJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma15CRController.InsertForma15(Microsoft.AspNetCore.Http.IFormFile,System.DateTime,System.String,System.String)">
+            <summary>
+            Insert Forma 15CR
+            </summary>
+            <param name="file"></param>
+            <param name="date"></param>
+            <param name="forma"></param>
+            <param name="fileJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.Forma16Controller">
+            <summary>
+            Forma 16
+            </summary>
+            <seealso cref="T:Backend.Formas.API.Controllers.Base.BaseController" />
+        </member>
+        <member name="F:Backend.Formas.API.Controllers.Forma16Controller._business">
+            <summary>
+            The business
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma16Controller.#ctor(Backend.Formas.Entities.Interface.Business.IForm16Business)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Backend.Formas.API.Controllers.Forma16Controller"/> class.
+            </summary>
+            <param name="business">The business.</param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma16Controller.UploadFile(Microsoft.AspNetCore.Http.IFormFile,System.String)">
+            <summary>
+            Uploads the file.
+            </summary>
+            <param name="file">The file.</param>
+            <param name="fileJSON">The file json.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma16Controller.CreateForm(System.Collections.Generic.List{Backend.Formas.Entities.DTO.Dominios.ResponseForma16})">
+            <summary>
+            Creates the form.
+            </summary>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.Forma17CRController">
+            <summary>
+            Controllers 17 CR
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma17CRController.#ctor(Backend.Formas.Entities.Interface.Business.IFormas17Business)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="_formas17"></param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma17CRController.ValidateForm17CR(System.DateTime,System.String,System.String)">
+            <summary>
+            Validador forma17
+            </summary>
+            <param name="date"></param>
+            <param name="forma"></param>
+            <param name="fileJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma17CRController.InsertForma17(Microsoft.AspNetCore.Http.IFormFile,System.DateTime,System.String,System.String)">
+            <summary>
+            Insertar Forma 17
+            </summary>
+            <param name="file"></param>
+            <param name="date"></param>
+            <param name="forma"></param>
+            <param name="fileJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.Forma20Controller">
+            <summary>
+            Forma20
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="F:Backend.Formas.API.Controllers.Forma20Controller._business">
+            <summary>
+            The business
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma20Controller.#ctor(Backend.Formas.Entities.Interface.Business.IForma20Business)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Backend.Formas.API.Controllers.Forma20Controller"/> class.
+            </summary>
+            <param name="business">The business.</param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma20Controller.UploadFile(Microsoft.AspNetCore.Http.IFormFile,System.String)">
+            <summary>
+            Uploads the file.
+            </summary>
+            <param name="file">The file.</param>
+            <param name="fileJSON">The file json.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma20Controller.CreateForm(System.Collections.Generic.List{Backend.Formas.Entities.DTO.Dominios.Forma20Request})">
+            <summary>
+            Creates the form.
+            </summary>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.Forma21Controller">
+            <summary>
+            Forma21Controller
+            </summary>
+            <seealso cref="T:Backend.Formas.API.Controllers.Base.BaseController" />
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma21Controller.#ctor(Backend.Formas.Entities.Interface.Business.IForma21Business)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Backend.Formas.API.Controllers.Forma21Controller"/> class.
+            </summary>
+            <param name="forma21Business">The forma21 business.</param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma21Controller.UploadFile(Microsoft.AspNetCore.Http.IFormFile,System.String)">
+            <summary>
+            Uploads the file.
+            </summary>
+            <param name="file">The file.</param>
+            <param name="fileJSON">The file json.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma21Controller.CreateForm(System.Collections.Generic.List{Backend.Formas.Entities.DTO.Dominios.ResponseForma21})">
+            <summary>
+            Creates the form.
+            </summary>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.Forma22CRController">
+            <summary>
+            Forma20
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="F:Backend.Formas.API.Controllers.Forma22CRController.forma22CR">
+            <summary>
+            The forma22 cr
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma22CRController.#ctor(Backend.Formas.Entities.Interface.Business.IForma22CRBusiness)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="_forma22CR"></param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma22CRController.ValidateForma22CR(System.DateTime,System.String,System.String)">
+            <summary>
+            Validar Forma22CR
+            </summary>
+            <param name="date"></param>
+            <param name="forma"></param>
+            <param name="fileJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma22CRController.InsertForma22CR(Microsoft.AspNetCore.Http.IFormFile,System.DateTime,System.String,System.String)">
+            <summary>
+            Insert Forma 22CR
+            </summary>
+            <param name="file"></param>
+            <param name="date"></param>
+            <param name="forma"></param>
+            <param name="fileJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.Forma23Controller">
+            <summary>
+            Forma23Controller
+            </summary>
+            <seealso cref="T:Backend.Formas.API.Controllers.Base.BaseController" />
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma23Controller.#ctor(Backend.Formas.Entities.Interface.Business.IForma23Business)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Backend.Formas.API.Controllers.Forma23Controller"/> class.
+            </summary>
+            <param name="forma23Business">The forma23 business.</param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma23Controller.UploadFile(Microsoft.AspNetCore.Http.IFormFile,System.String)">
+            <summary>
+            Uploads the file.
+            </summary>
+            <param name="file">The file.</param>
+            <param name="fileJSON">The file json.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma23Controller.CreateForm(System.Collections.Generic.List{Backend.Formas.Entities.DTO.Dominios.ResponseForma23})">
+            <summary>
+            Creates the form.
+            </summary>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.Forma30Controller">
+            <summary>
+            Forma30
+            </summary>
+        </member>
+        <member name="F:Backend.Formas.API.Controllers.Forma30Controller._business">
+            <summary>
+            The business
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma30Controller.#ctor(Backend.Formas.Entities.Interface.Business.IForma30Business)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Backend.Formas.API.Controllers.Forma30Controller"/> class.
+            </summary>
+            <param name="business">The business.</param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma30Controller.UploadFile(System.DateTime,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Forma30. Uploads the file.
+            </summary>
+            <param name="_date">The date.</param>
+            <param name="file">The file.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma30Controller.GetAll">
+            <summary>
+            Forma30. Gets all.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma30Controller.CreateForm(System.DateTime,System.Object)">
+            <summary>
+            Forma30. Register Form.
+            </summary>
+            <param name="date">The date.</param>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma30Controller.CreaForma30(Backend.Formas.Entities.Models.ParametrosCreaForma30)">
+            <summary>
+            Forma30. Crear Forma 30.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma30Controller.PvsCrea(Backend.Formas.Entities.Models.ParametrosPvsCrea)">
+            <summary>
+            Forma30. crea PVS.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma30Controller.PvsoCrea(Backend.Formas.Entities.Models.ParametrosPvsoCrea)">
+            <summary>
+            Forma30. crear PVSO.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.Forma30SEEController">
+            <summary>
+            Forma20
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="F:Backend.Formas.API.Controllers.Forma30SEEController._business">
+            <summary>
+            The business
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma30SEEController.#ctor(Backend.Formas.Entities.Interface.Business.IForma30SEEBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Backend.Formas.API.Controllers.Forma30SEEController"/> class.
+            </summary>
+            <param name="business">The business.</param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma30SEEController.InsertForma30(Microsoft.AspNetCore.Http.IFormFile,System.DateTime,System.String,System.String)">
+            <summary>
+            Inserts the forma30.
+            </summary>
+            <param name="file">The file.</param>
+            <param name="date">The date.</param>
+            <param name="forma">The forma.</param>
+            <param name="fileJSON">The file json.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma30SEEController.ValidarJsonBDP(Microsoft.AspNetCore.Http.IFormFile,System.DateTime,System.String,System.String)">
+            <summary>
+            Validars the json BDP.
+            </summary>
+            <param name="file">The file.</param>
+            <param name="date">The date.</param>
+            <param name="forma">The forma.</param>
+            <param name="fileJSON">The file json.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.Forma4Controller">
+            <summary>
+            Forma4
+            </summary>
+            <seealso cref="T:Backend.Formas.API.Controllers.Base.BaseController" />
+        </member>
+        <member name="F:Backend.Formas.API.Controllers.Forma4Controller._business">
+            <summary>
+            The business
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma4Controller.#ctor(Backend.Formas.Entities.Interface.Business.IFormas4Business)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Backend.Formas.API.Controllers.Forma4Controller"/> class.
+            </summary>
+            <param name="business">The business.</param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma4Controller.UploadFile(Microsoft.AspNetCore.Http.IFormFile,System.String)">
+            <summary>
+            uploadFile
+            </summary>
+            <param name="file"></param>
+            <param name="fileJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma4Controller.CreateForm(System.Collections.Generic.List{Backend.Formas.Entities.DTO.Dominios.ResponseForma4})">
+            <summary>
+            registerForm
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.Forma9Controller">
+            <summary>
+            Forma9
+            </summary>
+            <seealso cref="T:Backend.Formas.API.Controllers.Base.BaseController" />
+        </member>
+        <member name="F:Backend.Formas.API.Controllers.Forma9Controller._business">
+            <summary>
+            The business
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma9Controller.#ctor(Backend.Formas.Entities.Interface.Business.IFormas9Business)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Backend.Formas.API.Controllers.Forma9Controller"/> class.
+            </summary>
+            <param name="business">The business.</param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma9Controller.UploadFile(System.DateTime,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Forma9. Uploads the file.
+            </summary>
+            <param name="date">The date.</param>
+            <param name="files">The files.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma9Controller.GetAll">
+            <summary>
+            Forma9. Gets all.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma9Controller.CreateForm(System.DateTime,Backend.Formas.Entities.DTO.Dominios.RequestCreateForma9)">
+            <summary>
+            Forma9. Creates the form.
+            </summary>
+            <param name="date">The date.</param>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.Forma9MasivaController">
+            <summary>
+            forma9Masiva
+            MCG  --- > Mejoras BDP ++ 
+            2022 - Feb - 15
+            Carga de archivo Excel Formato predefindo por ecopetrol de la forma 9 que incluye el pden_id por pozo formacion 
+            
+            </summary>
+            <seealso cref="T:Backend.Formas.API.Controllers.Base.BaseController" />
+        </member>
+        <member name="F:Backend.Formas.API.Controllers.Forma9MasivaController._business">
+            <summary>
+            The business
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma9MasivaController.#ctor(Backend.Formas.Entities.Interface.Business.IFormas9MasivaBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Backend.Formas.API.Controllers.Forma9MasivaController"/> class.
+            </summary>
+            <param name="business">The business.</param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma9MasivaController.UploadFile(System.DateTime,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            forma9Masiva. Uploads the file.
+            </summary>
+            <param name="date">The date.</param>
+            <param name="files">The files.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma9MasivaController.CreateForm(System.DateTime,Backend.Formas.Entities.DTO.Dominios.RequestCreateForma9Masiva)">
+            <summary>
+            forma9Masiva. Creates the form.
+            </summary>
+            <param name="date">The date.</param>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma9MasivaController.ConsultarF9(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            consultaForm9Masiva 
+            </summary>
+            <param name="nAnio"></param>
+            <param name="nMes"></param>
+            <param name="nTodo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.Forma9MasivaController.ConsultaValidarAcumuladoF9(System.Int32,System.Int32)">
+            <summary>
+            consultaValidaAcumulaForm9Masiva
+            </summary>
+            <param name="nAnio"></param>
+            <param name="nMes"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.FormaC30MasivaController">
+            <summary>
+            FarmaC30Masiva
+            MCG  --- > Mejoras BDP ++ 
+            2022 - Abril - 29
+            Carga de archivo Excel Formato predefindo por ecopetrol de Forma 30 que incluye el pden_id PDEN_LAND_RIGHT 
+            
+            </summary>
+        </member>
+        <member name="F:Backend.Formas.API.Controllers.FormaC30MasivaController._business">
+            <summary>
+            The Business 
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.FormaC30MasivaController.#ctor(Backend.Formas.Entities.Interface.Business.IFormasC30MasivaBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Backend.Formas.API.Controllers.FormaC30MasivaController"/> class.
+            </summary>
+            <param name="business"></param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.FormaC30MasivaController.UploadFile(System.DateTime,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <param name="files"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.FormaC30MasivaController.CreateForm(System.DateTime,Backend.Formas.Entities.DTO.Dominios.RequestCreateFormaC30Masiva)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.FormaC30MasivaController.ConsultarC30(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            consultaFormC30Masiva 
+            </summary>
+            <param name="nAnio"></param>
+            <param name="nMes"></param>
+            <param name="nTodo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.FormaC4MasivaController">
+            <summary>
+            FarmaC4Masiva
+            MCG  --- > Mejoras BDP ++ 
+            2022 - Mar - 11
+            Carga de archivo Excel Formato predefindo por ecopetrol del Cuadro 4 que incluye el pden_id PDEN_LAND_RIGHT 
+            
+            </summary>
+        </member>
+        <member name="F:Backend.Formas.API.Controllers.FormaC4MasivaController._business">
+            <summary>
+            The Business 
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.FormaC4MasivaController.#ctor(Backend.Formas.Entities.Interface.Business.IFormasC4MasivaBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Backend.Formas.API.Controllers.FormaC4MasivaController"/> class.
+            </summary>
+            <param name="business"></param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.FormaC4MasivaController.UploadFile(System.DateTime,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <param name="files"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.FormaC4MasivaController.CreateForm(System.DateTime,Backend.Formas.Entities.DTO.Dominios.RequestCreateFormaC4Masiva)">
+            <summary>
+            
+            </summary>
+            <param name="date"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.FormaC4MasivaController.ConsultarC4(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            consultaFormC4Masiva 
+            </summary>
+            <param name="nAnio"></param>
+            <param name="nMes"></param>
+            <param name="nTodo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.FormaC4MasivaController.ConsultarC4Muni(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="nAnio"></param>
+            <param name="nMes"></param>
+            <param name="nTodo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.FormaC7Controller">
+            <summary>
+            FormaC7Controller
+            </summary>
+            <seealso cref="T:Backend.Formas.API.Controllers.Base.BaseController" />
+        </member>
+        <member name="F:Backend.Formas.API.Controllers.FormaC7Controller._formaC7Business">
+            <summary>
+            The forma c7 business
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.FormaC7Controller.#ctor(Backend.Formas.Entities.Interface.Business.IFormaC7Business)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Backend.Formas.API.Controllers.FormaC7Controller"/> class.
+            </summary>
+            <param name="formaC7Business">The forma c7 business.</param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.FormaC7Controller.UploadFile(Microsoft.AspNetCore.Http.IFormFile,System.String)">
+            <summary>
+            Uploads the file.
+            </summary>
+            <param name="file">The file.</param>
+            <param name="fileJSON">The file json.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.FormaC7Controller.CreateForm(System.Collections.Generic.List{Backend.Formas.Entities.DTO.Dominios.ResponseFormaC7})">
+            <summary>
+            Creates the form.
+            </summary>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.FormaCuadro1AController">
+            <summary>
+            FormaCuadro1AController
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.FormaCuadro1AController.#ctor(Backend.Formas.Entities.Interface.Business.IFormaCuadro1ABusiness)">
+            <summary>
+            Constructor Cuadro 1
+            </summary>
+            <param name="_cuadro1ABusiness"></param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.FormaCuadro1AController.ValidateFormaCuadro1A(System.DateTime,System.String,System.String)">
+            <summary>
+            Validar Estructura Forma Cuadro 1A.
+            </summary>
+            <param name="date"></param>
+            <param name="forma"></param>
+            <param name="fileJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.FormaCuadro1AController.InsertFormaCuadro1A(Microsoft.AspNetCore.Http.IFormFile,System.DateTime,System.String,System.String)">
+            <summary>
+            Inserts the forma cuadro1 a.
+            </summary>
+            <param name="file">The file.</param>
+            <param name="date">The date.</param>
+            <param name="forma">The forma.</param>
+            <param name="fileJSON">The file json.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Controllers.ReporteController">
+            <summary>
+            ReporteController
+            </summary>
+            <seealso cref="T:Backend.Formas.API.Controllers.Base.BaseController" />
+        </member>
+        <member name="F:Backend.Formas.API.Controllers.ReporteController.business">
+            <summary>
+            The business
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.ReporteController.#ctor(Backend.Formas.Entities.Interface.Business.IReporteBusiness)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Backend.Formas.API.Controllers.ReporteController"/> class.
+            </summary>
+            <param name="_bussines">The bussines.</param>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.ReporteController.ListarFormarReportadas(System.String,System.DateTime)">
+            <summary>
+            Gets the specified forma.
+            </summary>
+            <param name="forma">The forma.</param>
+            <param name="date">The date.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Backend.Formas.API.Controllers.ReporteController.ObtenerDetalle(System.String,System.DateTime,System.String,System.String,System.String)">
+            <summary>
+            </summary>
+            <param name="forma"></param>
+            <param name="date"></param>
+            <param name="idOperador"></param>
+            <param name="idCampo"></param>
+            <param name="idContrato"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Backend.Formas.API.Services.ServiceCollectionExtensions">
+            <summary>
+            Clase de extensión para configurar todos los servicios de la aplicación.
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.Services.ServiceCollectionExtensions.AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Agrega todos los servicios y la configuración de la aplicación.
+            </summary>
+            <param name="services">La colección de servicios para registrar.</param>
+            <param name="configuration">La configuración de la aplicación.</param>
+            <param name="environment">El entorno de hosting web.</param>
+        </member>
+        <member name="T:Backend.Formas.API.StartupJwtConfiguration">
+            <summary>
+            Startup JWT
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.StartupJwtConfiguration.AddJwt(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Adds the JWT.
+            </summary>
+            <param name="services">The services.</param>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="T:Backend.Formas.API.StartupSwagger">
+            <summary>
+            Startup Swagger
+            </summary>
+        </member>
+        <member name="M:Backend.Formas.API.StartupSwagger.AddSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds the swagger.
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+    </members>
+</doc>
